@@ -1,7 +1,5 @@
 "use strict";
 
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -74,6 +72,8 @@ var _jspsychVslGridScene = _interopRequireDefault(require("jspsych/plugins/jspsy
 var _callback_html_keyboard_response = _interopRequireDefault(require("./callback_plugins/callback_html_keyboard_response"));
 
 var _callback_image_keyboard_response = _interopRequireDefault(require("./callback_plugins/callback_image_keyboard_response"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var plugins = {
   "animation": _jspsychAnimation.default,
