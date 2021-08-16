@@ -3,7 +3,7 @@
 ## Overview
 * Generates a bundled `jsPsych` and `create-react-app` distributable file in `./dist`, as described [here](https://stackoverflow.com/questions/60604886/bundle-react-app-created-with-npx-create-react-app-to-js-file-using-webpack).
 * Bootstrapped using [npx create-react-app](https://reactjs.org/docs/create-a-new-react-app.html).
-* Source `jsPsych` code forked from [jspsych-react](https://github.com/openexp/jspsych-react).
+* Source code forked from [jspsych-react](https://github.com/openexp/jspsych-react).
 * The package is pointing to a [forked, "modular" version of jspsych (v6.1 ??)](https://github.com/makebrainwaves/jspsych/tree/modular) that has some minor modifications implemented by the _makebrainwaves_ developers. It may be possible to update this to a [modular version of jsPsych currently in development](https://github.com/jspsych/jsPsych/tree/modularization-extensions).
 
 ## Getting started
