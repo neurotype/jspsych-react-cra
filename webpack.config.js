@@ -6,25 +6,30 @@ module.exports = {
   },
   output: {
     filename: "jspsych-react-cra.js",
+    library: "jspsych-react-cra",
+    libraryTarget: "umd",
   },
   module: {
     rules: [
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        exclude: /node_modules/,
+        use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.m?js$/,
-        exclude: /(node_modules)/,
+        test: /\.js$/,
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-react'],
-            plugins: ['@babel/plugin-transform-runtime']
-          }
-        }
-      }
-    ],
+            presets: ['@babel/preset-env'],
+          },
+        },
+      },
+  ],
+  },
+  resolve: {
+    extensions: ["*", '.js', '.jsx']
   },
   plugins: [new UglifyJsPlugin()],
 }
