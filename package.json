@@ -13,7 +13,7 @@
     "William Wnekowicz"
   ],
   "dependencies": {
-    "jspsych": "git://github.com/makebrainwaves/jspsych.git#modular",
+    "jspsych": "git://github.com/neurotype/jsPsych.git#modular_6-3-1",
     "react": "^17.0.2"
   },
   "devDependencies": {

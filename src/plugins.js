@@ -26,7 +26,6 @@ import survey_likert from "jspsych/plugins/jspsych-survey-likert.js";
 import survey_multi_choice from "jspsych/plugins/jspsych-survey-multi-choice.js";
 import survey_multi_select from "jspsych/plugins/jspsych-survey-multi-select.js";
 import survey_text from "jspsych/plugins/jspsych-survey-text.js";
-import video from "jspsych/plugins/jspsych-video.js";
 import visual_search_circle from "jspsych/plugins/jspsych-visual-search-circle.js";
 import vsl_animate_occlusion from "jspsych/plugins/jspsych-vsl-animate-occlusion.js";
 import vsl_grid_scene from "jspsych/plugins/jspsych-vsl-grid-scene.js";
@@ -63,7 +62,6 @@ const plugins = {
   "survey-multi-choice": survey_multi_choice,
   "survey-multi-select": survey_multi_select,
   "survey-text": survey_text,
-  "video": video,
   "visual-search-circle": visual_search_circle,
   "vsl-animate-occlusion": vsl_animate_occlusion,
   "vsl-grid-scene": vsl_grid_scene,
