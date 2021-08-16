@@ -2,7 +2,7 @@
   "name": "jspsych-react-cra",
   "version": "0.1.0",
   "description": "A CRA-built React wrapper for jsPsych",
-  "main": "dist/index.js",
+  "main": "dist/jspsych-react-cra.js",
   "repository": "git@github.com:neurotype/jspsych-react-cra.git",
   "license": "MIT",
   "private": false,

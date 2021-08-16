@@ -13,7 +13,7 @@
 4. Build and bundle with `npm run build`
 
 ## Notes
-* To avoid conflicts with `react-scripts`, `package.json` should not contain `webpack-cli`, `uglifyjs-webpack-plugin`, or `babel-loader` in the `devDependencies` until all other packages have already been installed by step 1 (`npm install`). If running into issues, delete `package-lock.json`, `yarn.lock`, `node_modules` and follow steps 1-4 exactly in that order.
+* To avoid conflicts with `react-scripts`, `package.json` should NOT contain `webpack-cli`, `uglifyjs-webpack-plugin`, or `babel-loader` in the `devDependencies` until AFTER other packages have already been installed by step 1 above. If running into issues, delete all `package-lock.json`, `yarn.lock`, `node_modules` and follow steps 1-4 exactly in that order.
 * Related `babel-loader` troubleshooting found [here](https://github.com/storybookjs/storybook/issues/5183).
 
 ## To-do
