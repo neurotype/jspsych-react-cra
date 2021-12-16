@@ -9,8 +9,9 @@
 ## Getting started
 1. Install with `npm install`
 2. Add packages with `npm i -D webpack-cli uglifyjs-webpack-plugin`
-3. Add package with `npm install -D babel-loader@8.1.0`
-4. Build and bundle with `npm run build`
+3. Add package with `npm install -D babel-loader@8.1.0` The babel-loader version should be same as what is installed in React; to check which version this is, try `npm ls babel-loader`.
+4. Test: ``
+5. Build and bundle with `npm run build`
 
 ## Notes
 * To avoid conflicts with `react-scripts`, `package.json` should NOT contain `webpack-cli`, `uglifyjs-webpack-plugin`, or `babel-loader` in the `devDependencies` until AFTER other packages have already been installed by step 1 above. If running into issues, delete all `package-lock.json`, `yarn.lock`, `node_modules` and follow steps 1-4 exactly in that order.

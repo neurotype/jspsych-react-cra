@@ -1,4 +1,5 @@
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const path = require("path");
 
 module.exports = {
   entry: {
@@ -6,8 +7,9 @@ module.exports = {
   },
   output: {
     filename: "jspsych-react-cra.js",
-    library: "jspsych-react-cra",
+    library: "jspsychReactCra",
     libraryTarget: "umd",
+    path: path.resolve(__dirname, "dist"),
   },
   module: {
     rules: [
@@ -17,14 +19,13 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env'],
-          },
-        },
+        use: ['babel-loader'],
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: ['file-loader'],
       },
   ],
   },
